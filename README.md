@@ -1,2 +1,3 @@
 # caitlynanddarby
-a website for my best friend's wedding
+
+a website for my best friend's wedding.

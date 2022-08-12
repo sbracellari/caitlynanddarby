@@ -1,0 +1,84 @@
+{
+  "sections": [
+    {
+      "title": "ITINERARY, DRESS CODE, & GUESTS",
+      "questions": [
+        {
+          "q": "When is the RSVP deadline? Do I need to mail back my RSVP or can I do it online?",
+          "a": "June 8th, 2023! Exactly a month before the wedding! We will be doing mail-in RSVPs only.",
+          "hidden": false
+        },
+        {
+          "q": "Can I bring a date?",
+          "a": "We have a strict guest list to stay on budget. Our wedding is RSVP only. We will only be able to accommodate those listed on your invitation.",
+          "hidden": false
+        },
+        {
+          "q": "What should I wear? Is there a dress code?",
+          "a": "The dress code for our wedding is semi-formal/cocktail attire! There will be a mix of indoor and outdoor events so plan accordingly!",
+          "hidden": false
+        },
+        {
+          "q": "What time should I arrive?",
+          "a": "<ANSWER>",
+          "hidden": true
+        },
+        {
+          "q": "Will the ceremony and reception be indoors or outdoors?",
+          "a": "The ceremony will be indoors at the clock tower, and the reception will be a mix of indoors and outdoors at the Collins, with meals being served indoors.",
+          "hidden": false
+        },
+        {
+          "q": "Can I take photos during the ceremony?",
+          "a": "We will be opting for an unplugged ceremony. We love our photographer and we are sure you will too! We do encourage you to take photos throughout the reception and share them with us after!",
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "title": "FOOD",
+      "questions": [
+        {
+          "q": "Will food and drinks be served at the reception? What kind of food?",
+          "a": "Yes, there will be food and drinks served at the reception. <INSERT MENU>",
+          "hidden": true
+        },
+        {
+          "q": "Will there be any vegan/vegetarian options?",
+          "a": "Yes! Please kindly let us know on your RSVP if you require any dietary accommodations.",
+          "hidden": false
+        },
+        {
+          "q": "Will there be an open bar?",
+          "a": "There will be an open bar at the reception for our guests who are over the age of 21. We will be having an after-party at a local distillery called the Ugly Dog across the street after the reception which will be a cash bar.",
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "title": "TRAVEL & LODGING",
+      "questions": [
+        {
+          "q": "Can I smoke at the venue?",
+          "a": "NO. Smoking is not allowed and failing to follow this rule may result in removal from the property.",
+          "hidden": false
+        },
+        {
+          "q": "Do you have a hotel block for guests? Where do you recommend I stay?",
+          "a": "We recommend staying at either the Comfort Inn or the Chelsea House Victorian Inn. More information can be found under the Lodging tab.",
+          "hidden": false
+        },
+        {
+          "q": "Will transportation be provided to/from the hotel?",
+          "a": "Yes. As of right now, transportation will be provided to/from all event locations. This includes the hotel, the clocktower, and the distillery.",
+          "hidden": false
+        },
+        {
+          "q": "Is there parking available at the wedding venue?",
+          "a": "Yes, there is free 24-hour parking a few buildings down from the wedding venue! Not more than a 2-minute walk. However, parking is limited so please plan accordingly. There will be signs to direct guests on where to park the day of!",
+          "hidden": false
+        }
+      ]
+    }
+  ]
+}
