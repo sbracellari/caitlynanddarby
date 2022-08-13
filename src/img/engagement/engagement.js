@@ -10,5 +10,6 @@ import e8 from './engagement8.jpeg'
 import e9 from './engagement9.jpeg'
 import e10 from './engagement10.jpeg'
 import e11 from './engagement11.jpeg'
+import e12 from './engagement12.jpeg'
 
-export const engagementPhotos = [e0, e1, e2, e3, e4, e5, e6, e7, e8, e11, e10, e9]
+export const engagementPhotos = [e0, e1, e2, e3, e4, e12, e5, e6, e7, e8, e11, e10, e9]

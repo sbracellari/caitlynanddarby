@@ -17,7 +17,7 @@ const theme = createTheme({
   },
 })
 
-const root = createRoot(document.getElementById('caitlyn-darby'))
+const root = createRoot(document.getElementById('caitlynanddarby'))
 root.render(
   <ThemeProvider theme={theme}>
     <App />

@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
 import { Box, Collapse, Divider, IconButton, Typography } from '@mui/material'
 import faq from '../data/faq.json'
+import contacts from '../data/contacts.json'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import { styled } from '@mui/material/styles'
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
+import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
+import EmailIcon from '@mui/icons-material/Email';
 
 export function FAQ() {
   const [expandedIndex, setExpandedIndex] = useState(0)
@@ -92,31 +95,26 @@ export function FAQ() {
           sx={{
             display: 'flex',
             justifyContent: 'center',
-            flexDirection: mobile ? 'column' : 'row',
+            flexDirection: 'column',
           }}
         >
-          <Box sx={{ width: '100%', pb: 2 }}>
-            <Typography sx={{ color: 'white' }}>
-              <strong>Caitlyn</strong>
-            </Typography>
-            <Typography sx={{ color: 'white' }}>(248) 807-8381</Typography>
-            <Typography
-              component='a'
-              href='mailto:caitlyn.copenhagen123@gmail.com'
-              sx={{ color: 'white' }}
-            >
-              caitlyn.copenhagen123@gmail.com
-            </Typography>
-          </Box>
-          <Box sx={{ width: '100%' }}>
-            <Typography sx={{ color: 'white' }}>
-              <strong>Darby</strong>
-            </Typography>
-            <Typography sx={{ color: 'white' }}>(734) 660-3136</Typography>
-            <Typography component='a' href='mailto:llewe4@hotmail.com' sx={{ color: 'white' }}>
-              llewe4@hotmail.com
-            </Typography>
-          </Box>
+          {contacts.map((c, i) => (
+            <Box key={i} sx={{ width: '100%', pb: 4 }}>
+              <Typography sx={{ color: 'white', pb: 1 }}>
+                <strong>{c.name} — {c.type}</strong>
+              </Typography>
+              <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+                <PhoneIphoneIcon sx={{ color: 'white', mr: 1 }} />
+                <Typography component='a' href={`tel:${c.phone}`} sx={{ color: 'white' }}>{c.phone}</Typography>
+              </Box>
+              <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+                <EmailIcon sx={{ color: 'white', mr: 1 }} />
+                <Typography component='a'  href={`mailto:${c.email}`} sx={{ color: 'white' }}>
+                  {c.email}
+                </Typography>
+              </Box>
+            </Box>
+          ))}
         </Box>
       </Box>
       <Divider sx={{ background: 'white', width: '100%', opacity: '0.5' }} />

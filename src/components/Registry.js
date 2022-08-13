@@ -11,13 +11,18 @@ import { ListItemAvatar } from '@mui/material'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAmazon } from '@fortawesome/free-brands-svg-icons'
 import { faCircleDot } from '@fortawesome/free-regular-svg-icons'
+import useMediaQuery from '@mui/material/useMediaQuery'
+import { useTheme } from '@mui/material/styles'
 
 export function Registry() {
+  const theme = useTheme()
+  const mobile = useMediaQuery(theme.breakpoints.down('sm'))
+
   return (
     <Box
       sx={{ width: '75%', mt: 2, display: 'flex', flexDirection: 'column', alignItems: 'center' }}
     >
-      <List sx={{ width: '100%' }}>
+      <List sx={{ width: mobile ? '100%' : '60%' }}>
         <ListItem
           secondaryAction={
             <IconButton

@@ -4,9 +4,7 @@ import Typography from '@mui/material/Typography'
 import dogs from '../../img/dogs.jpeg'
 import angel from '../../img/angel.jpeg'
 
-export function Pets(props) {
-  // const { mobile } = props
-
+export function Pets() {
   return (
     <Box sx={{ pt: 4, pb: 4 }}>
       <Typography sx={{ color: 'white', fontSize: 30, textAlign: 'center', pb: 1 }}>
