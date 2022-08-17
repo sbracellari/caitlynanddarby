@@ -46,6 +46,7 @@ export function Locations() {
                     </IconButton>
                   )
                 }
+                sx={{ pl: 0 }}
               >
                 <ListItemAvatar>
                   <Marker id={l.id} />

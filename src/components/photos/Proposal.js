@@ -23,7 +23,14 @@ export function Proposal(props) {
         pb: 4,
       }}
     >
-      <Box sx={{ width: mobile ? '100%' : '70%' }}>
+      <Box
+        sx={{
+          width: mobile ? '100%' : '70%',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+        }}
+      >
         <Typography variant='h5' sx={{ pb: 1 }}>
           THE PROPOSAL
         </Typography>
