@@ -1,22 +1,27 @@
-import { Badge } from '@mui/material'
 import React from 'react'
-import PlaceIcon from '@mui/icons-material/Place'
 
-const Marker = ({ id }) => (
-  <Badge
-    badgeContent={id}
-    sx={{
-      '& .MuiBadge-badge': {
-        background: 'white',
-        right: '50%',
-        top: '37%',
-        borderRadius: '50%',
-        fontSize: '11px',
-      },
-    }}
-  >
-    <PlaceIcon sx={{ color: 'red', width: '3rem', height: '3rem' }} />
-  </Badge>
-)
+// mui
+import { Badge } from '@mui/material'
+import { Place } from '@mui/icons-material/' // icons
+import { useTheme } from '@mui/material/styles' // theme
 
-export default Marker
+export function Marker(props) {
+  const { id } = props
+  const theme = useTheme()
+
+  return (
+    <Badge
+      badgeContent={id}
+      sx={{
+        '& .MuiBadge-badge': {
+          background: theme.palette.secondary.main,
+          right: '50%',
+          top: '40%',
+          borderRadius: '50%',
+        },
+      }}
+    >
+      <Place sx={{ color: 'red', width: '3rem', height: '3rem' }} />
+    </Badge>
+  )
+}

@@ -1,7 +1,13 @@
 import React, { useState } from 'react'
-import { wp } from '../../data/wedding-party.js'
+
+// mui
 import { Box } from '@mui/material'
+
+// custom
 import { Group } from './Group'
+
+// data
+import wp from '../../data/wedding-party.json'
 
 export function WeddingParty() {
   const [expandedIndex, setExpandedIndex] = useState(0)
@@ -10,12 +16,9 @@ export function WeddingParty() {
   }
 
   return (
-    <Box sx={{ m: 4, width: '75%' }}>
+    <Box sx={{ width: '100%' }}>
       {wp.map((group, i) => (
-        <Box
-          sx={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}
-          key={i}
-        >
+        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} key={i}>
           <Group
             expanded={expandedIndex === i}
             handleExpand={handleExpand}

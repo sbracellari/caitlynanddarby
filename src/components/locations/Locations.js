@@ -1,29 +1,36 @@
 import React from 'react'
-import { Box, IconButton, Typography, Tooltip, Link } from '@mui/material'
-import { Map } from './Map'
+
+// mui
+import {
+  Box,
+  IconButton,
+  Link,
+  List,
+  ListItem,
+  ListItemAvatar,
+  ListItemText,
+  Tooltip,
+  Typography,
+} from '@mui/material'
+import { OpenInNew } from '@mui/icons-material'
+import { useTheme } from '@mui/material/styles'
+
+// custom
+// import { Map } from './Map' // hidden for now
+import { Marker } from './Marker'
+
+// data
 import locations from '../../data/locations.json'
-import OpenInNewIcon from '@mui/icons-material/OpenInNew'
-import List from '@mui/material/List'
-import ListItem from '@mui/material/ListItem'
-import ListItemAvatar from '@mui/material/ListItemAvatar'
-import ListItemText from '@mui/material/ListItemText'
-import Marker from './Marker'
 
 export function Locations() {
+  const theme = useTheme()
+
   return (
-    <Box
-      sx={{
-        width: '75%',
-        minHeight: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        mt: 3,
-      }}
-    >
-      <Box sx={{ width: '100%', height: '90vh' }}>
+    <Box>
+      {/* hide map for now, cus it's not workin' */}
+      {/* <Box sx={{ width: '100%', height: '70vh' }}>
         <Map />
-      </Box>
+      </Box> */}
       <Box>
         <List>
           {locations.map((l, i) => (
@@ -34,7 +41,7 @@ export function Locations() {
                   l.website && (
                     <IconButton target='_blank' rel='noopener noreferrer' href={l.website}>
                       <Tooltip title='More Info'>
-                        <OpenInNewIcon sx={{ color: 'white' }} />
+                        <OpenInNew sx={{ color: theme.palette.secondary.main }} />
                       </Tooltip>
                     </IconButton>
                   )
@@ -47,13 +54,16 @@ export function Locations() {
                   primary={
                     <>
                       <Box sx={{ display: 'flex', flexDirection: 'column', pr: 1 }}>
-                        <Typography sx={{ color: 'white', fontSize: 25 }}>{l.name}</Typography>
+                        <Typography variant='h5' sx={{ textAlign: 'start' }}>
+                          {l.name}
+                        </Typography>
                         <Typography
                           component={Link}
                           target='_blank'
                           rel='noopener noreferrer'
                           href={l.maps}
-                          sx={{ textDecoration: 'underline', color: 'white', fontSize: 18, pb: 1 }}
+                          variant='h6'
+                          sx={{ textAlign: 'start', textDecoration: 'underline', pb: 1 }}
                         >
                           {l.address}
                         </Typography>
@@ -61,7 +71,8 @@ export function Locations() {
                           <Typography
                             component='a'
                             href={`tel:${l.phone}`}
-                            sx={{ color: 'white', fontSize: 18, pb: 1 }}
+                            variant='h6'
+                            sx={{ pb: 1, textAlign: 'start' }}
                           >
                             {l.phone}
                           </Typography>
@@ -69,9 +80,7 @@ export function Locations() {
                       </Box>
                     </>
                   }
-                  secondary={
-                    <Typography sx={{ color: 'white', fontSize: 14, pr: 1 }}>{l.desc}</Typography>
-                  }
+                  secondary={<Typography sx={{ pr: 1, textAlign: 'start' }}>{l.desc}</Typography>}
                 />
               </ListItem>
             </>

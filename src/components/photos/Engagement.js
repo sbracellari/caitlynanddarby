@@ -1,33 +1,35 @@
 import React from 'react'
-import Box from '@mui/material/Box'
-import Typography from '@mui/material/Typography'
-import Masonry from '@mui/lab/Masonry'
-import { engagementPhotos } from '../../img/engagement/engagement'
 
-export function Engagement() {
+// mui
+import { Box, IconButton, Tooltip, Typography } from '@mui/material'
+import { Instagram } from '@mui/icons-material/' // icons
+import { useTheme } from '@mui/material/styles' // theme
+
+// custom
+import { ImageGrid } from './ImageGrid'
+
+export function Engagement(props) {
+  const theme = useTheme()
+  const { engagement } = props
+
   return (
-    <Box sx={{ pt: 4, pb: 4 }}>
-      <Typography sx={{ pb: 1, color: 'white', fontSize: 30, textAlign: 'center' }}>
+    <Box sx={{ pt: 4, pb: 4, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <Typography variant='h5' sx={{ pb: 1 }}>
         ENGAGEMENT SESSION
       </Typography>
-      <Typography sx={{ color: 'white', fontSize: 14, textAlign: 'center', pb: 2 }}>
-        Photos were taken at Maumee Bay State Park in Ohio by SamiRose Photography.{' '}
+      <Typography>
+        Photos were taken at Maumee Bay State Park in Ohio by SamiRose Photography.
+        <Tooltip title='samirosephotos'>
+          <IconButton
+            target='_blank'
+            rel='noopener noreferrer'
+            href='https://www.instagram.com/samirosephotos/'
+          >
+            <Instagram sx={{ color: theme.palette.secondary.main }} />
+          </IconButton>
+        </Tooltip>
       </Typography>
-      <Masonry columns={3} spacing={2}>
-        {engagementPhotos.map((photo, i) => (
-          <div key={i}>
-            <img
-              src={photo}
-              alt='img'
-              style={{
-                borderRadius: 4,
-                display: 'block',
-                width: '100%',
-              }}
-            />
-          </div>
-        ))}
-      </Masonry>
+      <ImageGrid topLabel={false} bottomLabel={false} photos={engagement} cols={3} />
     </Box>
   )
 }

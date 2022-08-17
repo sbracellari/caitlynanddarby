@@ -1,0 +1,92 @@
+{
+  "engagement": [
+    {
+      "img": "../img/engagement/e0.jpeg",
+      "desc": ""
+    },
+    {
+      "img": "../img/engagement/e1.jpeg",
+      "desc": ""
+    },
+    {
+      "img": "../img/engagement/e2.jpeg",
+      "desc": ""
+    },
+    {
+      "img": "../img/engagement/e3.jpeg",
+      "desc": ""
+    },
+    {
+      "img": "../img/engagement/e4.jpeg",
+      "desc": ""
+    },
+    {
+      "img": "../img/engagement/e12.jpeg",
+      "desc": ""
+    },
+    {
+      "img": "../img/engagement/e5.jpeg",
+      "desc": ""
+    },
+    {
+      "img": "../img/engagement/e6.jpeg",
+      "desc": ""
+    },
+    {
+      "img": "../img/engagement/e7.jpeg",
+      "desc": ""
+    },
+    {
+      "img": "../img/engagement/e8.jpeg",
+      "desc": ""
+    },
+    {
+      "img": "../img/engagement/e11.jpeg",
+      "desc": ""
+    },
+    {
+      "img": "../img/engagement/e10.jpeg",
+      "desc": ""
+    },
+    {
+      "img": "../img/engagement/e9.jpeg",
+      "desc": ""
+    }
+  ],
+  "pets": [
+    {
+      "img": "../img/pets/dogs.jpeg",
+      "desc": "Belle (Beagle) and Maverick (Pomsky) are the dogs of the couple. They have been best friends since they met when they were just puppies."
+    },
+    {
+      "img": "../img/pets/angel.jpeg",
+      "desc": "Angel was the Brides cat before she met the Groom. However, Angel quickly warmed up to the Groom and he is now, without a doubt, Angel's favorite human."
+    }
+  ],
+  "proposal": [
+    {
+      "img": "../img/proposal.jpeg",
+      "desc": "Darby proposed to Caitlyn in Halmstad, Sweden with Maverick in attendance."
+    }
+  ],
+  "home": "../img/home.jpeg",
+  "header": "../img/flowers.webp",
+  "misc": [
+    {
+      "img": "../img/misc/faster-horses.jpeg",
+      "desc": "Caitlyn and Darby together at Faster Horses!"
+    },
+    {
+      "img": "../img/misc/axe-throwing.jpeg",
+      "desc": "The Bride and Groom enjoy activities like axe throwing in their off time!"
+    },
+    {
+      "img": "../img/misc/tigers.jpeg",
+      "desc": "In the off season, the Bride and Groom love to travel and go to Tigers games! Go Tigers!"
+    },
+    {
+      "img": "../img/misc/graduation.jpeg",
+      "desc": "Caitlyn and Darby at Caitlyn's graduation. Always supporting each other!"
+    }
+  ]
+}

@@ -1,9 +1,18 @@
 import React from 'react'
-import Box from '@mui/material/Box'
-import Typography from '@mui/material/Typography'
-import proposal from '../../img/proposal.jpeg'
 
-export function Proposal() {
+// mui
+import { Box, Typography } from '@mui/material'
+import { useTheme } from '@mui/material/styles' // theme
+import useMediaQuery from '@mui/material/useMediaQuery' // mobile
+
+// custom
+import { ImageGrid } from './ImageGrid'
+
+export function Proposal(props) {
+  const theme = useTheme()
+  const { proposal } = props
+  const mobile = useMediaQuery(theme.breakpoints.down('sm'))
+
   return (
     <Box
       sx={{
@@ -12,17 +21,14 @@ export function Proposal() {
         alignItems: 'center',
         pt: 2,
         pb: 4,
-        textAlign: 'center',
       }}
     >
-      <Typography sx={{ color: 'white', fontSize: 30, textAlign: 'center', pb: 1 }}>
-        THE PROPOSAL
-      </Typography>
-      <img src={proposal} alt='proposal' style={{ width: '50%' }} />
-      <Typography sx={{ pt: 2, color: 'white', fontSize: 14 }}>
-        {' '}
-        Darby proposed to Caitlyn in Halmstad, Sweden with Maverick in attendance.{' '}
-      </Typography>
+      <Box sx={{ width: mobile ? '100%' : '70%' }}>
+        <Typography variant='h5' sx={{ pb: 1 }}>
+          THE PROPOSAL
+        </Typography>
+        <ImageGrid topLabel={false} bottomLabel={true} photos={proposal} cols={1} />
+      </Box>
     </Box>
   )
 }

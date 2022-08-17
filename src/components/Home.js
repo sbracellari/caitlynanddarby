@@ -1,19 +1,23 @@
 import React from 'react'
-import { Box, Typography } from '@mui/material'
-import home from '../img/home.jpeg'
-import useMediaQuery from '@mui/material/useMediaQuery'
-import { useTheme } from '@mui/material/styles'
 
-export function Home() {
+// mui
+import { Box, Typography } from '@mui/material'
+import { useTheme } from '@mui/material/styles' // theme
+import useMediaQuery from '@mui/material/useMediaQuery' // mobile
+
+// img
+import photos from '../data/photos.json'
+
+export function Home(props) {
   const theme = useTheme()
   const mobile = useMediaQuery(theme.breakpoints.down('sm'))
 
   return (
-    <Box sx={{ m: 4, width: '100%' }}>
+    <Box>
       <Box sx={{ display: 'flex', justifyContent: 'center', mb: 4 }}>
-        <img src={home} alt='home page' style={{ width: '85%' }} />
+        <img src={photos.home} alt='home page' style={{ width: mobile ? '100%' : '85%' }} />
       </Box>
-      <Box sx={{ m: 4, justifyContent: 'center', color: 'white', display: 'flex' }}>
+      <Box sx={{ m: 4, justifyContent: 'center', display: 'flex' }}>
         <Box
           sx={{
             borderRight: '1px solid white',
@@ -24,9 +28,7 @@ export function Home() {
             justifyContent: 'center',
           }}
         >
-          <Typography sx={{ fontSize: mobile ? 20 : 35, textAlign: 'center' }}>
-            JULY 8 {<br></br>} 2023
-          </Typography>
+          <Typography variant={mobile ? 'h6' : 'h4'}>JULY 8 {<br></br>} 2023</Typography>
         </Box>
         <Box
           sx={{
@@ -38,9 +40,7 @@ export function Home() {
             alignItems: 'center',
           }}
         >
-          <Typography sx={{ fontSize: mobile ? 20 : 35, textAlign: 'center' }}>
-            CHELSEA {<br></br>} MI
-          </Typography>
+          <Typography variant={mobile ? 'h6' : 'h4'}>CHELSEA {<br></br>} MI</Typography>
         </Box>
       </Box>
     </Box>

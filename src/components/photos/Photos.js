@@ -1,24 +1,28 @@
 import React from 'react'
-import Box from '@mui/material/Box'
-import Divider from '@mui/material/Divider'
+
+// mui
+import { Box, Divider } from '@mui/material/'
+
+// custom
 import { Proposal } from './Proposal'
 import { Engagement } from './Engagement'
 import { Pets } from './Pets'
 import { Misc } from './Misc'
 
+// img
+import photos from '../../data/photos.json'
+
 export function Photos() {
   return (
-    <Box
-      sx={{ width: '75%', mt: 2, display: 'flex', flexDirection: 'column', alignItems: 'center' }}
-    >
-      <Proposal />
-      <Divider sx={{ background: 'white', width: '85%', opacity: '0.5' }} />
-      <Engagement />
-      <Divider sx={{ background: 'white', width: '85%', opacity: '0.5' }} />
-      <Pets />
-      <Divider sx={{ background: 'white', width: '85%', opacity: '0.5' }} />
-      <Misc />
-      <Divider sx={{ background: 'white', width: '85%', opacity: '0.5' }} />
+    <Box>
+      <Proposal proposal={photos.proposal} />
+      <Divider />
+      <Engagement engagement={photos.engagement} />
+      <Divider />
+      <Pets pets={photos.pets} />
+      <Divider />
+      <Misc misc={photos.misc} />
+      <Divider />
     </Box>
   )
 }

@@ -1,8 +1,13 @@
 import React from 'react'
+
+// mui
 import { Box, Typography } from '@mui/material'
+
+// util
 import { getRemainingTime } from '../util/util'
-import { useTheme } from '@mui/material/styles'
-import flowers from '../img/flowers.webp'
+
+// img
+import photos from '../data/photos.json'
 
 const bullet = (
   <Box component='span' sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}>
@@ -12,10 +17,9 @@ const bullet = (
 
 export function Header() {
   const daysLeft = getRemainingTime()
-  const theme = useTheme()
 
   return (
-    <Box sx={{ textAlign: 'center' }}>
+    <Box>
       <Box
         sx={{
           position: 'absolute',
@@ -27,20 +31,16 @@ export function Header() {
           overflow: 'hidden',
         }}
       >
-        <img src={flowers} alt='flowers' style={{ width: '95%', height: '95%' }} />
+        <img src={photos.header} alt='flowers' style={{ width: '95%', height: '95%' }} />
       </Box>
       <Box sx={{ p: '10%', pb: 2 }}>
-        <Typography
-          sx={{ fontStretch: 'expanded', fontSize: 50, color: theme.palette.secondary.main }}
-        >
-          CAITLYN {'&'} DARBY
-        </Typography>
+        <Typography variant='h3'>CAITLYN {'&'} DARBY</Typography>
       </Box>
       <Box sx={{ pt: 2, pb: 4 }}>
-        <Typography sx={{ fontSize: 18, margin: 0, color: theme.palette.secondary.main }}>
+        <Typography variant='h6' sx={{ margin: 0 }}>
           JULY 8, 2023 {bullet} CHELSEA, MI
         </Typography>
-        <Typography sx={{ fontSize: 18, margin: 0, color: theme.palette.secondary.main }}>
+        <Typography variant='h6' sx={{ margin: 0 }}>
           {daysLeft} DAYS TO GO!
         </Typography>
       </Box>

@@ -1,21 +1,23 @@
 import React, { useState } from 'react'
 
-import { useTheme } from '@mui/material/styles'
+// mui
 import { Box, Tab, Tabs } from '@mui/material'
+import { useTheme } from '@mui/material/styles' // theme
+import useMediaQuery from '@mui/material/useMediaQuery' // mobile
 
-import { Home } from './components/Home'
-import { Photos } from './components/photos/Photos'
-import { WeddingParty } from './components/wedding-party/WeddingParty'
+// custom
 import { FAQ } from './components/FAQ'
-import { Locations } from './components/locations/Locations'
-import { Registry } from './components/Registry'
-import { Header } from './components/Header'
 import { Footer } from './components/Footer'
-import useMediaQuery from '@mui/material/useMediaQuery'
+import { Header } from './components/Header'
+import { Home } from './components/Home'
+import { Locations } from './components/locations/Locations'
+import { Photos } from './components/photos/Photos'
+import { Registry } from './components/Registry'
+import { WeddingParty } from './components/wedding-party/WeddingParty'
 
 export default function App() {
-  const [tabIndex, setTabIndex] = useState(0)
   const theme = useTheme()
+  const [tabIndex, setTabIndex] = useState(0)
   const mobile = useMediaQuery(theme.breakpoints.down('sm'))
 
   const tabs = [
@@ -30,7 +32,7 @@ export default function App() {
   return (
     <Box sx={{ backgroundColor: theme.palette.primary.main, minHeight: '100vh', width: '100%' }}>
       <Header />
-      <Box>
+      <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Tabs
           textColor='secondary'
           indicatorColor='secondary'
@@ -42,19 +44,32 @@ export default function App() {
           allowScrollButtonsMobile
           sx={{
             '& .MuiTabs-scrollButtons': {
-              color: 'white',
+              color: theme.palette.secondary.main,
+              m: '0px 10px',
             },
+            width: '100%',
           }}
         >
           {tabs.map((tab, i) => (
-            <Tab sx={{ color: 'white', textTransform: 'none' }} label={tab.title} key={i} />
+            <Tab
+              sx={{ color: theme.palette.secondary.main, textTransform: 'none' }}
+              label={tab.title}
+              key={i}
+            />
           ))}
         </Tabs>
         {tabs.map(
           (tab, i) =>
             tabIndex === i && (
               <Box
-                sx={{ display: 'flex', justifyContent: 'center', width: '100%', height: '100%' }}
+                sx={{
+                  m: 4,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  width: '75%',
+                  height: '100%',
+                }}
                 key={i}
               >
                 {tab.component}

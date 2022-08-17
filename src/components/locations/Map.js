@@ -1,12 +1,18 @@
 import React from 'react'
-import GoogleMapReact from 'google-map-react'
-import Marker from './Marker'
+
+// custom
+import { Marker } from './Marker'
+
+// data
 import coords from '../../data/locations.json'
+
+// util
 import { findCenter } from '../../util/util'
 
-export function Map() {
-  const center = findCenter(coords)
+// 3rd party
+import GoogleMapReact from 'google-map-react'
 
+export function Map() {
   return (
     <div style={{ height: '100%', width: '100%' }}>
       <GoogleMapReact
@@ -15,7 +21,7 @@ export function Map() {
           language: 'en',
           region: 'US',
         }}
-        defaultCenter={center}
+        defaultCenter={findCenter(coords)}
         defaultZoom={14}
       >
         {coords.map(({ lat, lng, id, name }) => {

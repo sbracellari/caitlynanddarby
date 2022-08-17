@@ -1,13 +1,16 @@
 import React from 'react'
-import Typography from '@mui/material/Typography'
-import { Box, Collapse, Divider, IconButton } from '@mui/material'
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
+
+// mui
+import { Box, Collapse, Divider, IconButton, Typography } from '@mui/material'
+import { ExpandMore } from '@mui/icons-material' // icons
 import { styled } from '@mui/material/styles'
+import { useTheme } from '@mui/material/styles' // theme
 
 export function Group(props) {
+  const theme = useTheme()
   const { expanded, handleExpand, group, name, index } = props
 
-  const ExpandMore = styled((props) => {
+  const Expand = styled((props) => {
     const { expand, ...other } = props
     return <IconButton {...other} />
   })(({ theme, expand }) => ({
@@ -21,10 +24,10 @@ export function Group(props) {
     <>
       <Box>
         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb: 2, mt: 2 }}>
-          <Typography sx={{ color: 'white', fontSize: 25 }}>{name}</Typography>
-          <ExpandMore expand={expanded} onClick={() => handleExpand(expanded, index)}>
-            <ExpandMoreIcon sx={{ color: 'white' }} />
-          </ExpandMore>
+          <Typography variant='h6'>{name}</Typography>
+          <Expand expand={expanded} onClick={() => handleExpand(expanded, index)}>
+            <ExpandMore sx={{ color: theme.palette.secondary.main }} />
+          </Expand>
         </Box>
         <Collapse in={expanded} timeout='auto' unmountOnExit>
           <Box sx={{ m: 2 }}>
@@ -43,21 +46,21 @@ export function Group(props) {
                   }}
                 >
                   <img
-                    style={{ width: 300, height: 300, borderRadius: '50%', color: 'white' }}
+                    style={{ width: 300, height: 300, borderRadius: '50%' }}
                     alt={g.name}
                     src={g.image}
                   />
                 </div>
-                <Typography sx={{ color: 'white' }}>
+                <Typography>
                   {g.name} — {g.title}
                 </Typography>
-                <Typography sx={{ color: 'white', fontSize: 14 }}>{g.description}</Typography>
+                <Typography>{g.description}</Typography>
               </Box>
             ))}
           </Box>
         </Collapse>
       </Box>
-      <Divider sx={{ background: 'white', width: '85%', opacity: '0.5' }} />
+      <Divider />
     </>
   )
 }
