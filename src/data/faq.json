@@ -9,8 +9,13 @@
           "hidden": false
         },
         {
-          "q": "Can I bring a date?",
-          "a": "We have a strict guest list to stay on budget. Our wedding is RSVP only. We will only be able to accommodate those listed on your invitation.",
+          "q": "Can I bring a guest/date?",
+          "a": "We unfortunately cannot accommodate additional guests. Due to limited capacity, we can only allow the people named on your invitation. Your invitation will be made out to '<Your Name> & Guest' if a plus one has been given to you.",
+          "hidden": false
+        },
+        {
+          "q": "Are kids invited?",
+          "a": "Due to limited numbers, we hope you appreciate that children are only invited if named. Your invitation will be made out to 'The <Your Last Name> Family' if your children have been invited.",
           "hidden": false
         },
         {

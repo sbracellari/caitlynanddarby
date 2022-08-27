@@ -21,7 +21,7 @@
         "description": "Sister of the Bride"
       },
       {
-        "image": "",
+        "image": "../img/wedding-party/bridesmaids/rachel.jpeg",
         "name": "Rachel Staff",
         "title": "Bridesmaid",
         "description": "Cousin of the Bride"
@@ -39,7 +39,7 @@
         "description": "Sorority sister of the Bride"
       },
       {
-        "image": "",
+        "image": "../img/wedding-party/bridesmaids/zena.jpeg",
         "name": "Zena Alshomali",
         "title": "Bridesmaid",
         "description": "Sorority sister of the Bride"
@@ -97,7 +97,7 @@
     "name": "FLOWER GIRLS",
     "party": [
       {
-        "image": "",
+        "image": "../img/wedding-party/flower-girls.jpeg",
         "name": "Alex and Ellie Barber",
         "title": "Flower Girls",
         "description": "Alex (8) and Ellie (6) are family friends with the couple. The Bride has babysat for the Barbers for over four years!"

@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { Box, Collapse, Divider, IconButton, Typography } from '@mui/material'
 import {
   // icons
-  Email,
+  MailOutline,
   ExpandMore,
   PhoneIphone,
 } from '@mui/icons-material'
@@ -119,7 +119,7 @@ export function FAQ() {
                 </Typography>
               </Box>
               <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-                <Email sx={{ color: theme.palette.secondary.main, mr: 1 }} />
+                <MailOutline sx={{ color: theme.palette.secondary.main, mr: 1 }} />
                 <Typography component='a' href={`mailto:${c.email}`}>
                   {c.email}
                 </Typography>

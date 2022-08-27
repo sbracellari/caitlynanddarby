@@ -43,13 +43,20 @@ export function Group(props) {
                     width: 300,
                     border: '2px solid #78866b',
                     borderRadius: '50%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
                   }}
-                >
-                  <img
-                    style={{ width: 300, height: 300, borderRadius: '50%' }}
-                    alt={g.name}
-                    src={g.image}
-                  />
+                > 
+                  { g.image ? (
+                    <img
+                      style={{ width: 300, height: 300, borderRadius: '50%' }}
+                      alt={g.name}
+                      src={g.image}
+                    />
+                  ) : (
+                    <Typography>Picture coming soon!</Typography>
+                  )}
                 </div>
                 <Typography>
                   {g.name} — {g.title}
