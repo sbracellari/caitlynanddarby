@@ -5,17 +5,17 @@
       "questions": [
         {
           "q": "When is the RSVP deadline? Do I need to mail back my RSVP or can I do it online?",
-          "a": "June 8th, 2023! Exactly a month before the wedding! We will be doing mail-in RSVPs only.",
+          "a": "June 8th, 2023! Exactly a month before the wedding! We will be doing mail-in and text RSVPs. Mobile numbers for the bride and groom can be found at the bottom of this page.",
           "hidden": false
         },
         {
           "q": "Can I bring a guest/date?",
-          "a": "We unfortunately cannot accommodate additional guests. Due to limited capacity, we can only allow the people named on your invitation. Your invitation will be made out to '<Your Name> & Guest' if a plus one has been given to you.",
+          "a": "Unfortunately, we will not ba able to accommodate additional guests. Due to limited capacity, we can only allow the people named on your invitation. Your invitation will be made out to '<Your Name> & Guest' if a plus one has been given to you.",
           "hidden": false
         },
         {
           "q": "Are kids invited?",
-          "a": "Due to limited numbers, we hope you appreciate that children are only invited if named. Your invitation will be made out to 'The <Your Last Name> Family' if your children have been invited.",
+          "a": "Due to limited numbers, we hope you appreciate that children are only invited if named. Your invitation will be made out to 'The <Your Last Name> Family' if your children have been invited. Otherwise, your invitation will have your specific name on it, or '<Your Name> & Guest' as described in the question above.",
           "hidden": false
         },
         {
@@ -44,18 +44,18 @@
       "title": "FOOD",
       "questions": [
         {
-          "q": "Will food and drinks be served at the reception? What kind of food?",
-          "a": "Yes, there will be food and drinks served at the reception. <INSERT MENU>",
-          "hidden": true
+          "q": "Will food be served at the reception? What kind of food?",
+          "a": "Yes, there will be food and drinks served at the reception. We will be doing a buffet style with herb-baked chicken and smoked pork being the main protein choices. We will also have an italian crepe available as a vegetarian option.",
+          "hidden": false
         },
         {
           "q": "Will there be any vegan/vegetarian options?",
-          "a": "Yes! Please kindly let us know on your RSVP if you require any dietary accommodations.",
+          "a": "Yes! We will have one vegetarian (NOT VEGAN) dish available (see above question). Please kindly let us know on your RSVP if you require any further dietary accommodations.",
           "hidden": false
         },
         {
           "q": "Will there be an open bar?",
-          "a": "There will be an open bar at the reception for our guests who are over the age of 21. We will be having an after-party at a local distillery called the Ugly Dog across the street after the reception which will be a cash bar.",
+          "a": "There will be an open bar at the reception for our guests who are over the age of 21. However, liquor shots will not be allowed at the open bar. We also ask that you do not bring in any outside alcohol, as that is not allowed either. We will be having an after-party at a local distillery called the Ugly Dog across the street after the reception which will be a cash bar.",
           "hidden": false
         }
       ]
@@ -70,7 +70,7 @@
         },
         {
           "q": "Do you have a hotel block for guests? Where do you recommend I stay?",
-          "a": "We recommend staying at either the Comfort Inn or the Chelsea House Victorian Inn. More information can be found under the Lodging tab.",
+          "a": "We recommend staying at either the Comfort Inn or the Chelsea House Victorian Inn. You can book online at the Comfort Inn by clicking this link: https://www.choicehotels.com/reservations/groups/KG89W7 or by calling them at (734)-433-8000 and giving them the group name of \"Copenhagen Wedding\". More information on the Chelsea House Victorian Inn will be added later, so check back frequently!",
           "hidden": false
         },
         {
