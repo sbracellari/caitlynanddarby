@@ -8,7 +8,8 @@
     "lat": 42.2976265,
     "lng": -84.0299596,
     "maps": "https://www.google.com/maps/place/Comfort+Inn/@42.2976265,-84.0299596,17z/data=!3m1!4b1!4m8!3m7!1s0x883cceb80f6c87fb:0xe42a523d4bc34dff!5m2!4m1!1i2!8m2!3d42.2976226!4d-84.0277709",
-    "website": "https://www.choicehotels.com/michigan/chelsea/comfort-inn-hotels/mi164?mc=smadadpxbrl&pmf=adnet&clickid=a1115889618533283010738346007809085248191"
+    "website": "https://www.choicehotels.com/reservations/groups/KG89W7",
+    "tooltip": "Book Here!"
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
     "lat": 42.3181706,
     "lng": -84.0241541,
     "maps": "https://www.google.com/maps/place/Chelsea+House+Victorian+Inn/@42.3181706,-84.0241541,17z/data=!3m1!4b1!4m8!3m7!1s0x883ccc01b579aad5:0x9729a6ff33fd1c5f!5m2!4m1!1i2!8m2!3d42.3181613!4d-84.0196884",
-    "website": "https://www.chelseahouseinn.com/"
+    "website": "https://www.chelseahouseinn.com/",
+    "tooltip": "More Info"
   },
   {
     "id": 3,
@@ -30,7 +32,8 @@
     "lat": 42.3181107,
     "lng": -84.0237022,
     "maps": "https://www.google.com/maps/place/The+Collins+off+Main/@42.3181107,-84.0237022,17z/data=!3m1!4b1!4m5!3m4!1s0x883ccd008a7279bf:0x6d4c48b43107ccc3!8m2!3d42.3181107!4d-84.0215135",
-    "website": "https://www.thecollins.co/"
+    "website": "https://www.thecollins.co/",
+    "tooltip": "More Info"
   },
   {
     "id": 4,
@@ -41,7 +44,8 @@
     "lat": 42.3199346,
     "lng": -84.0225524,
     "maps": "https://www.google.com/maps/place/Chelsea+Clocktower/@42.3199346,-84.0225524,17z/data=!3m1!4b1!4m5!3m4!1s0x883ccd7b9787e6e9:0x775c4caa9daaf51d!8m2!3d42.3199343!4d-84.0203869",
-    "website": null
+    "website": null,
+    "tooltip": null
   },
   {
     "id": 5,
@@ -52,6 +56,7 @@
     "lat": 42.3166758,
     "lng": -84.0230407,
     "maps": "https://www.google.com/maps/place/Ugly+Dog+Distillery/@42.3166758,-84.0230407,17z/data=!3m1!4b1!4m5!3m4!1s0x883ccb585c211f7f:0x9f0e0e5e1aa95bc0!8m2!3d42.3166719!4d-84.020852",
-    "website": "https://www.uglydogdistillery.com/"
+    "website": "https://www.uglydogdistillery.com/",
+    "tooltip": "More Info"
   }
 ]

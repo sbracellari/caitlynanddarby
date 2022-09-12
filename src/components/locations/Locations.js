@@ -40,7 +40,7 @@ export function Locations() {
                 secondaryAction={
                   l.website && (
                     <IconButton target='_blank' rel='noopener noreferrer' href={l.website}>
-                      <Tooltip title='More Info'>
+                      <Tooltip title={l.tooltip}>
                         <OpenInNew sx={{ color: theme.palette.secondary.main }} />
                       </Tooltip>
                     </IconButton>
