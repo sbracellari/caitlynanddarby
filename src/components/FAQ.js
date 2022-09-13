@@ -18,7 +18,7 @@ import contacts from '../data/contacts.json'
 
 export function FAQ() {
   const theme = useTheme()
-  const [expandedIndex, setExpandedIndex] = useState(0)
+  const [expandedIndex, setExpandedIndex] = useState(2)
   const mobile = useMediaQuery(theme.breakpoints.down('sm'))
 
   const handleExpand = (expanded, index) => {
@@ -44,54 +44,56 @@ export function FAQ() {
         </Typography>
       </Box>
       {faq.sections.map((section, i) => (
-        <Box key={i}>
-          <Box
-            sx={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: mobile ? 'center' : 'space-between',
-              pl: 2,
-              pr: 2,
-            }}
-          >
-            <Typography variant='h6' sx={{ p: 2 }}>
-              {section.title}
-            </Typography>
-            <Expand
-              expand={expandedIndex === i}
-              onClick={() => handleExpand(expandedIndex === i, i)}
+        !section.hidden && (
+          <Box key={i}>
+            <Box
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: mobile ? 'center' : 'space-between',
+                pl: 2,
+                pr: 2,
+              }}
             >
-              <ExpandMore sx={{ color: theme.palette.secondary.main }} />
-            </Expand>
-          </Box>
-          <Collapse in={expandedIndex === i} timeout='auto' unmountOnExit>
-            <Box sx={{ pl: mobile ? 2 : 6, width: '90%' }}>
-              {section.questions.map(
-                (question, index) =>
-                  !question.hidden && (
-                    <Box
-                      key={index}
-                      sx={{ mb: 5, display: 'flex', flexDirection: 'column', alignItems: 'start' }}
-                    >
-                      <Box sx={{ display: 'flex' }}>
-                        <Typography sx={{ pr: 1 }}>
-                          <strong>Q:</strong>
-                        </Typography>
-                        <Typography sx={{ textAlign: 'start' }}>{question.q}</Typography>
-                      </Box>
-                      <Box sx={{ display: 'flex' }}>
-                        <Typography sx={{ pr: 1 }}>
-                          <strong>A:</strong>
-                        </Typography>
-                        <Typography sx={{ textAlign: 'start' }}>{question.a}</Typography>
-                      </Box>
-                    </Box>
-                  )
-              )}
+              <Typography variant='h6' sx={{ p: 2 }}>
+                {section.title}
+              </Typography>
+              <Expand
+                expand={expandedIndex === i}
+                onClick={() => handleExpand(expandedIndex === i, i)}
+              >
+                <ExpandMore sx={{ color: theme.palette.secondary.main }} />
+              </Expand>
             </Box>
-          </Collapse>
-          <Divider />
-        </Box>
+            <Collapse in={expandedIndex === i} timeout='auto' unmountOnExit>
+              <Box sx={{ pl: mobile ? 2 : 6, width: '90%' }}>
+                {section.questions.map(
+                  (question, index) =>
+                    !question.hidden && (
+                      <Box
+                        key={index}
+                        sx={{ mb: 5, display: 'flex', flexDirection: 'column', alignItems: 'start' }}
+                      >
+                        <Box sx={{ display: 'flex' }}>
+                          <Typography sx={{ pr: 1 }}>
+                            <strong>Q:</strong>
+                          </Typography>
+                          <Typography sx={{ textAlign: 'start' }}>{question.q}</Typography>
+                        </Box>
+                        <Box sx={{ display: 'flex' }}>
+                          <Typography sx={{ pr: 1 }}>
+                            <strong>A:</strong>
+                          </Typography>
+                          <Typography sx={{ textAlign: 'start' }}>{question.a}</Typography>
+                        </Box>
+                      </Box>
+                    )
+                )}
+              </Box>
+            </Collapse>
+            <Divider />
+          </Box>
+        )
       ))}
       <Box sx={{ mt: 4, mb: 4 }}>
         <Typography sx={{ pb: 2 }}>

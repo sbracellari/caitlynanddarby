@@ -2,6 +2,7 @@
   "sections": [
     {
       "title": "ITINERARY, DRESS CODE, & GUESTS",
+      "hidden": true,
       "questions": [
         {
           "q": "When is the RSVP deadline? Do I need to mail back my RSVP or can I do it online?",
@@ -42,6 +43,7 @@
     },
     {
       "title": "FOOD",
+      "hidden": true,
       "questions": [
         {
           "q": "Will food be served at the reception? What kind of food?",
@@ -62,6 +64,7 @@
     },
     {
       "title": "TRAVEL & LODGING",
+      "hidden": false,
       "questions": [
         {
           "q": "Can I smoke at the venue?",
