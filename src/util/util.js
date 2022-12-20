@@ -13,3 +13,7 @@ export function findCenter(coords) {
     lng: (Math.min(...lngs) + Math.max(...lngs)) / 2,
   }
 }
+
+export function mod(m, n) {
+  return ((m % n) + n) % n
+}

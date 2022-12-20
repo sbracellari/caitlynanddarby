@@ -73,20 +73,56 @@
   "header": "../img/flowers.webp",
   "misc": [
     {
-      "img": "../img/misc/faster-horses.jpeg",
-      "desc": "Caitlyn and Darby together at Faster Horses!"
+      "img": "../img/misc/m0.jpeg",
+      "desc": ""
     },
     {
-      "img": "../img/misc/axe-throwing.jpeg",
+      "img": "../img/misc/m1.jpeg",
       "desc": "The Bride and Groom enjoy activities like axe throwing in their off time!"
     },
     {
-      "img": "../img/misc/tigers.jpeg",
-      "desc": "In the off season, the Bride and Groom love to travel and go to Tigers games! Go Tigers!"
+      "img": "../img/misc/m2.jpeg",
+      "desc": ""
     },
     {
-      "img": "../img/misc/graduation.jpeg",
+      "img": "../img/misc/m3.jpeg",
+      "desc": ""
+    },
+    {
+      "img": "../img/misc/m4.jpeg",
+      "desc": "Caitlyn and Darby together at Faster Horses!"
+    },
+    {
+      "img": "../img/misc/m5.jpeg",
       "desc": "Caitlyn and Darby at Caitlyn's graduation. Always supporting each other!"
+    },
+    {
+      "img": "../img/misc/m6.jpeg",
+      "desc": ""
+    },
+    {
+      "img": "../img/misc/m7.jpeg",
+      "desc": ""
+    },
+    {
+      "img": "../img/misc/m8.jpeg",
+      "desc": ""
+    },
+    {
+      "img": "../img/misc/m9.jpeg",
+      "desc": ""
+    },
+    {
+      "img": "../img/misc/m10.jpeg",
+      "desc": ""
+    },
+    {
+      "img": "../img/misc/m11.jpeg",
+      "desc": ""
+    },
+    {
+      "img": "../img/misc/m12.jpeg",
+      "desc": "In the off season, the Bride and Groom love to travel and go to Tigers games! Go Tigers!"
     }
   ]
 }

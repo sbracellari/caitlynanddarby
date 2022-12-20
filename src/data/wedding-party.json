@@ -33,6 +33,12 @@
         "description": "Sorority sister and sorority big of the Bride"
       },
       {
+        "image": "../img/wedding-party/bridesmaids/amber.jpeg",
+        "name": "Amber Anderson",
+        "title": "Bridesmaid",
+        "description": "College friend and sorority sister of the Bride"
+      },
+      {
         "image": "../img/wedding-party/bridesmaids/hollie.jpeg",
         "name": "Hollie Pastorino",
         "title": "Bridesmaid",
@@ -56,7 +62,7 @@
         "description": "The Groom's Spider-man to his Batman. Childhood best friend"
       },
       {
-        "image": "",
+        "image": "../img/wedding-party/groomsmen/doug.jpeg",
         "name": "Doug Blaisdell",
         "title": "Groomsman",
         "description": "Junior hockey teammate"
@@ -90,6 +96,12 @@
         "name": "Chris Muir",
         "title": "Groomsman",
         "description": "Childhood friend"
+      },
+      {
+        "image": "../img/wedding-party/groomsmen/sprat.jpeg",
+        "name": "Alex Spratke",
+        "title": "Groomsman",
+        "description": "Close friend of the Groom"
       }
     ]
   },

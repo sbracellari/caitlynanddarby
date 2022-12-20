@@ -45,10 +45,10 @@ export function Group(props) {
                     borderRadius: '50%',
                     display: 'flex',
                     alignItems: 'center',
-                    justifyContent: 'center'
+                    justifyContent: 'center',
                   }}
-                > 
-                  { g.image ? (
+                >
+                  {g.image ? (
                     <img
                       style={{ width: 300, height: 300, borderRadius: '50%' }}
                       alt={g.name}
