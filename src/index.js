@@ -19,10 +19,30 @@ const theme = createTheme({
         },
       },
     },
+    MuiMobileStepper: {
+      styleOverrides: {
+        root: {
+          backgroundColor: '#201c1d',
+        },
+        dots: {
+          backgroundColor: '#201c1d',
+          alignItems: 'center',
+        },
+        dot: {
+          backgroundColor: 'rgba(255, 255, 255, 0.3)',
+        },
+        dotActive: {
+          backgroundColor: '#78866b',
+          width: '10px',
+          height: '10px',
+        },
+      },
+    },
   },
   palette: {
     primary: {
       main: '#201c1d',
+      secondary: '#78866b',
     },
     secondary: {
       main: '#fff',

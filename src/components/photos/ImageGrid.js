@@ -1,7 +1,7 @@
 import React from 'react'
 
 // mui
-import { Paper } from '@mui/material'
+import Paper from '@mui/material/Paper'
 import Masonry from '@mui/lab/Masonry' // mui lab
 import { useTheme } from '@mui/material/styles' // theme
 import useMediaQuery from '@mui/material/useMediaQuery' // mobile
