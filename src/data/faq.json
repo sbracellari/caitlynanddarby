@@ -2,11 +2,11 @@
   "sections": [
     {
       "title": "ITINERARY, DRESS CODE, & GUESTS",
-      "hidden": true,
+      "hidden": false,
       "questions": [
         {
           "q": "When is the RSVP deadline? Do I need to mail back my RSVP or can I do it online?",
-          "a": "June 8th, 2023! Exactly a month before the wedding! We will be doing mail-in and text RSVPs. Mobile numbers for the bride and groom can be found at the bottom of this page.",
+          "a": "May 25th, 2023! We will be doing e-mail RSVPs.",
           "hidden": false
         },
         {
@@ -16,18 +16,18 @@
         },
         {
           "q": "Are kids invited?",
-          "a": "Due to limited numbers, we hope you appreciate that children are only invited if named. Your invitation will be made out to 'The <Your Last Name> Family' if your children have been invited. Otherwise, your invitation will have your specific name on it, or '<Your Name> & Guest' as described in the question above.",
+          "a": "Due to limited numbers, we hope you appreciate that children are only invited if your invite says 'plus family'. Otherwise, your invitation will have your specific name on it, or '<Your Name> & Guest' as described in the question above.",
           "hidden": false
         },
         {
           "q": "What should I wear? Is there a dress code?",
-          "a": "The dress code for our wedding is semi-formal/cocktail attire! There will be a mix of indoor and outdoor events so plan accordingly!",
+          "a": "The dress code for our wedding is semi-formal/cocktail attire, however the bride and groom kindly request that guests avoid wearing white/creme. There will be a mix of indoor and outdoor events so plan accordingly!",
           "hidden": false
         },
         {
           "q": "What time should I arrive?",
-          "a": "<ANSWER>",
-          "hidden": true
+          "a": "The ceremony begins at 4 P.M., so we ask that guests begin arriving around 3:30 P.M.",
+          "hidden": false
         },
         {
           "q": "Will the ceremony and reception be indoors or outdoors?",
@@ -43,7 +43,7 @@
     },
     {
       "title": "FOOD",
-      "hidden": true,
+      "hidden": false,
       "questions": [
         {
           "q": "Will food be served at the reception? What kind of food?",
@@ -73,12 +73,12 @@
         },
         {
           "q": "Do you have a hotel block for guests? Where do you recommend I stay?",
-          "a": "We recommend staying at either the Comfort Inn or the Chelsea House Victorian Inn. You can book online or by calling the Comfort Inn at (734)-433-8000 and giving them the group name of \"Copenhagen Wedding\". Additional information for booking at the Comfort Inn can be found on the Location tab. More information on the Chelsea House Victorian Inn will be added later, so check back frequently!",
+          "a": "We recommend staying at either the Comfort Inn or the Chelsea House Victorian Inn. You can book online or by calling the Comfort Inn at (734)-433-8000 and giving them the group name of \"Copenhagen Wedding\". Additional information for booking at the Comfort Inn can be found on the Location tab. For the Chelsea House Victorian Inn, you can call 1 (877) 618-4935 and book a room.",
           "hidden": false
         },
         {
           "q": "Will transportation be provided to/from the hotel?",
-          "a": "Yes. As of right now, transportation will be provided to/from all event locations. This includes the hotel, the clocktower, and the distillery.",
+          "a": "Yes. As of right now, transportation will be provided to/from all event locations. This includes the hotel, the clock tower, and the distillery.",
           "hidden": false
         },
         {
