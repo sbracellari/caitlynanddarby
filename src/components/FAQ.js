@@ -18,7 +18,7 @@ import contacts from '../data/contacts.json'
 
 export function FAQ() {
   const theme = useTheme()
-  const [expandedIndex, setExpandedIndex] = useState(2)
+  const [expandedIndex, setExpandedIndex] = useState(0)
   const mobile = useMediaQuery(theme.breakpoints.down('sm'))
 
   const handleExpand = (expanded, index) => {
@@ -90,7 +90,12 @@ export function FAQ() {
                             <Typography sx={{ pr: 1 }}>
                               <strong>A:</strong>
                             </Typography>
-                            <Typography sx={{ textAlign: 'start' }}>{question.a}</Typography>
+                            <Typography sx={{ textAlign: 'start' }}>
+                              {question.a}
+                              {question.a.toLowerCase().includes('you can send your rsvp') && (
+                                <a style={{ color: '#fff' }} href='mailto:copenhagenllewellynwedding@gmail.com'>copenhagenllewellynwedding@gmail.com</a>
+                              )}
+                            </Typography>
                           </Box>
                         </Box>
                       )
