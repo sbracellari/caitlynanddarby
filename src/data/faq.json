@@ -78,7 +78,7 @@
         },
         {
           "q": "Will transportation be provided to/from the hotel?",
-          "a": "Yes. As of right now, transportation will be provided to/from all event locations. This includes the hotel, the clock tower, and the distillery.",
+          "a": "Transportation will only be provided from the reception back to the hotels.",
           "hidden": false
         },
         {
