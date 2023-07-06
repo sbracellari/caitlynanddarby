@@ -2,6 +2,7 @@ export function getRemainingTime() {
   const today = new Date().getTime()
   const weddingDate = new Date('07/08/2023').getTime()
   const daysLeft = Math.ceil((weddingDate - today) / (1000 * 60 * 60 * 24))
+  if (daysLeft < 0) return 0
   return daysLeft
 }
 

@@ -41,7 +41,7 @@ export function Header() {
           JULY 8, 2023 {bullet} CHELSEA, MI
         </Typography>
         <Typography variant='h6' sx={{ margin: 0 }}>
-          {daysLeft} DAYS TO GO!
+          {daysLeft === 1 ? `${daysLeft} DAY TO GO!` : `${daysLeft} DAYS TO GO!`}
         </Typography>
       </Box>
     </Box>
